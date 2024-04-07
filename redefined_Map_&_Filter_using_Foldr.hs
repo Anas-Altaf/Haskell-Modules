@@ -13,5 +13,5 @@ filter' :: (a -> Bool) -> [a] -> [a]
 filter' p = foldr (applyFunction2 p) []
 
 -- When Applying Function :
--- We can also use lambda functions within the map ad filter defination in place of applyFunction
+-- We can also use lambda functions within the map and filter defination in place of applyFunction
 -- lists like xs can also be added in function defination

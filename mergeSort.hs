@@ -24,3 +24,11 @@ msort [x] = [x]
 msort xs = merge (msort leftHalfList) (msort rightHalfList)
   where
     (leftHalfList, rightHalfList) = halves xs
+    
+main :: IO ()
+main = do
+  -- Testing
+  let result = msort [1,3,2,5,4,7,6,9,8]
+  print result -- [1,2,3,4,5,6,7,8,9]
+  
+  
